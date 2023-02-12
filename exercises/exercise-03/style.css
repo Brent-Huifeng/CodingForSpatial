@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+  text-transform: capitalize;
+  font-size: 3em;
+  line-height: 1.4em;
+}
+
+p {
+  line-height: 2;
+}
