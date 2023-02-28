@@ -41,11 +41,17 @@ main {
     flex-direction: column;
   }
 
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
   section {
     width: 100%;
     flex-direction: row;
     display:flex;
   }
+
 
 }
 /* mobile */
@@ -53,13 +59,21 @@ main {
 
   main {
     display: flex;
-    flex-direction: row;
+    
+  }
+
+  .row {
+    flex-direction: column;
   }
 
   section {
     width: 100%;
     flex-direction: column;
     display:flex;
+  }
+
+  .column {
+    width: 100%;
   }
 
 }
