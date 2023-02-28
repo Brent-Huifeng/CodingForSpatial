@@ -20,8 +20,6 @@ p {
   line-height: 1.68;
 }
 
-/* children */
-
 .column {
   padding: 10px 20px;
   display: flex;
