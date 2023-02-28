@@ -41,6 +41,12 @@ main {
     flex-direction: column;
   }
 
+  section {
+    width: 100%;
+    flex-direction: row;
+    display:flex;
+  }
+
 }
 /* mobile */
 @media (max-width: 450px) {
@@ -48,6 +54,12 @@ main {
   main {
     display: flex;
     flex-direction: row;
+  }
+
+  section {
+    width: 100%;
+    flex-direction: column;
+    display:flex;
   }
 
 }
