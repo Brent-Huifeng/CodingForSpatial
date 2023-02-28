@@ -39,7 +39,7 @@ main {
 }
 
 section {
-  width: 50%;
+  width: 100%;
   flex-direction: row;
   display:flex;
 }
