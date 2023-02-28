@@ -15,11 +15,6 @@ p {
   line-height: 2;
 }
 
-/* .row {
-  display: flex;
-  line-height: 1.68;
-} */
-
 .row {
   display: flex;
   width: 100%;
@@ -32,59 +27,12 @@ p {
   flex: 1;
 }
 
-/* main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  width: 100%;
-  flex-direction: row;
-  display:flex;
-} */
-
-/* tablet */
+/* small tablet and mobile*/
 @media (max-width: 960px) {
   
-  /* main {
-    display: flex;
-    flex-direction: column;
-  } */
-
   .row {
     display: flex;
     flex-direction: column;
   }
-
-  /* section {
-    width: 100%;
-    flex-direction: row;
-    display:flex;
-  } */
-
-
-}
-/* mobile */
-@media (max-width: 450px) {
-
-  /* main {
-    display: flex;
-    
-  } */
-
-  .row {
-    flex-direction: column;
-  }
-
-  /* section {
-    width: 100%;
-    flex-direction: column;
-    display:flex;
-  }
-
-  .column {
-    width: 100%;
-  } */
 
 }
