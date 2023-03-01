@@ -27,19 +27,19 @@ p {
   flex: 1;
 }
 
-.blank {
+/* .blank {
 }
 
 .section {
-}
+} */
 
 .border {
     padding: 10px;
     border: 1px solid grey
 }
 
-.each {
-}
+/* .each {
+} */
 
 .image {
     height: 100%;
