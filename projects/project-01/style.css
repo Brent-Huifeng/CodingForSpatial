@@ -35,8 +35,9 @@ p {
 } */ */
 
 .border {
-    padding: 10px;
+    margin: 10px;
     border: 1px solid grey
+    padding：10px;
 }
 
 /* .each {
