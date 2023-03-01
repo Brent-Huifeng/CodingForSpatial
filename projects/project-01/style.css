@@ -23,6 +23,7 @@ header, footer {
     left: 0;
     right: 0;
     height: 80px;
+    background-color: white;
 }
 
 body {
