@@ -27,16 +27,21 @@ p {
   flex: 1;
 }
 
+.bottom {
+    align-items: flex-end;
+}
+
 .blank {
+    display: flex; 
     width:25%;
 }
 
 /* .section {
-} */ */
+} */
 
 .border {
     margin: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgb(198, 198, 198);
     padding:10px;
 }
 
@@ -48,6 +53,14 @@ p {
     height: 100%;
 }
 
+.red{
+    background-color:#e52a33;
+    color: white;    
+}
+
+.middle{
+    text-align: center;
+}
 
 
 /* small tablet and mobile*/
