@@ -27,11 +27,12 @@ p {
   flex: 1;
 }
 
-/* .blank {
+.blank {
+    width:20%;
 }
 
-.section {
-} */
+/* .section {
+} */ */
 
 .border {
     padding: 10px;
