@@ -1,8 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header{
+    top:0px;
+    width:100%;
+    background-color: white;
+}
+
+main{
+    margin: 120px 0;
+  }
+
+header, footer {
+    /* line-height: 60px; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 
 h1 {
   font-family: "Libre Baskerville", serif;
@@ -15,9 +46,14 @@ p {
   line-height: 2;
 }
 
+.direction {
+    display: flex; 
+    flex: 1;  
+}
+
 .row {
-    display: flex;  
-    flex: 1;
+    display: flex; 
+    flex: 1; 
 }
 
 .column {
@@ -31,10 +67,15 @@ p {
     align-items: flex-end;
 }
 
+
 .blank {
     display: flex; 
     width:25%;
 }
+
+.div1 {
+    flex-grow: 0.5;
+  }
 
 /* .section {
 } */
@@ -50,7 +91,6 @@ p {
 
 .image {
     padding: 30px;
-    height: 100%;
 }
 
 .red{
@@ -62,13 +102,20 @@ p {
     text-align: center;
 }
 
+.flex-middle{
+    justify-content:space-between;
+}
+
+.underline{
+    border-bottom: 1px solid black;
+}
 
 /* small tablet and mobile*/
 @media (max-width: 960px) {
   
-  .row {
+  .direction {    
     display: flex;
-    flex-direction: column;
-  }
-
+    flex-direction: column; 
+    flex: 1;  
+}
 }
