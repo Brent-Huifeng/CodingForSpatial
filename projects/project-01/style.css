@@ -31,6 +31,10 @@ p {
     width: 100%;
 }
 
+.section {
+    width: 100%;
+}
+
 .border {
     border: 1px solid grey
 }
@@ -41,10 +45,6 @@ p {
 
 .image {
     height: 100%;
-}
-
-.section {
-    width: 100%;
 }
 
 
