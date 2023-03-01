@@ -21,7 +21,7 @@ p {
 }
 
 .column {
-  padding: 10px 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   flex: 1;
