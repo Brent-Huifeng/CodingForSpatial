@@ -21,7 +21,7 @@ p {
 }
 
 .column {
-  padding: 30px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -43,6 +43,7 @@ p {
 } */
 
 .image {
+    padding: 30px;
     height: 100%;
 }
 
