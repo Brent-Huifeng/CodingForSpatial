@@ -28,6 +28,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    display: flex;
+    flex-wrap: nowrap;
+    
+    background: tomato;
+    padding: 0 40px;
+    line-height: 80px;
   } 
 
   nav {
@@ -41,7 +48,7 @@
     overflow: auto;
   }
   
-  .container, header {
+  .container{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
