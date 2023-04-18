@@ -23,6 +23,12 @@
     flex-direction: column;
     background-color: papayawhip;
   }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   nav {
     height: 60px;
