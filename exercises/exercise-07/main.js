@@ -35,25 +35,3 @@ let array_one = [
   
   let btn = document.querySelector("button");
   btn.addEventListener("click", renderPoem);
-
-// console.log('this works');
-
-// let nouns = ["Mondstadt", "Liyue", "Inazuma", "Inazuma"];
-// // let verbs = ["look", "make", "continue"];
-// let adjectives = ["first", "second", "third", "fourth"];
-
-// //Pick a random element from each array
-// let noun = nouns[Math.floor(Math.random()*nouns.length)]
-// // let verb = verbs[Math.floor(Math.random()*verbs.length)]
-// let adjective = adjectives[Math.floor(Math.random()*adjectives.length)]
-
-// console.log(noun)
-// // console.log(verb)
-// console.log(adjective)
-
-// // Place it into the sentence
-// let sentence = `${noun} is the ${adjective} country in Genshin Impact.`
-// console.log(sentence)
-// document.write(sentence)
-
-// console.log(nouns[Math.floor(Math.random()*nouns.length)])
