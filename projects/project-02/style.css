@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /*   padding: 0; */
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Abhaya Libre', serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: nowrap;    
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+  margin: 20px;
+  line-height: 60px;
+}
+
+.list {
+  background-color: #ffffff;
+  padding: 0px;
+  /* display: flex; */
+  /* flex-wrap: flex; */
+  border: 0px solid #141414;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px 0 60px;
+}
+
+.filter-btn {
+  color: rgb(160, 160, 160);
+  background-color: white;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.filter-btn.active {
+  color: black;
+  /* border-color: #16b5ef; */
+  /* background: none; */
+  text-decoration: underline;
+}
+
+.filter-btn:hover {
+  color: black
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style-type: none;
+  border: 0px solid #141414;
+  padding: 10px;
+  margin: 0px;
+  width: 20%;
+}
+
+
+ul .card.hide {
+  display: none;
+}
+
+ul .card.show {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+img:hover {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  z-index: 2;
+}
