@@ -1,16 +1,25 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  /*   padding: 0; */
 }
 
 html,
 body {
   height: 100vh;
   width: 100%;
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Cutive Mono', monospace;
   font-size: 14px;
   text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: white;
+  z-index: 2;
 }
 
 .filters {
@@ -27,8 +36,6 @@ body {
 .list {
   background-color: #ffffff;
   padding: 0px;
-  /* display: flex; */
-  /* flex-wrap: flex; */
   border: 0px solid #141414;
   width: 100%;
 
@@ -45,13 +52,11 @@ body {
   height: 30px;
   text-align: center;
   border: none;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Cutive Mono', monospace;
 }
 
 .filter-btn.active {
   color: black;
-  /* border-color: #16b5ef; */
-  /* background: none; */
   text-decoration: underline;
 }
 
@@ -109,7 +114,7 @@ img {
 img:hover {
   -webkit-transform: scale(2);
   transform: scale(2);
-  z-index: 2;
+  z-index: 3;
 }
 
 

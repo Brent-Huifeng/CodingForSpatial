@@ -11,6 +11,16 @@ body {
     font-weight: bold;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0); 
+  z-index: 2;
+}
+
 nav {
     height: 40px;
 }
@@ -25,7 +35,7 @@ nav {
 
 a {
     text-decoration: none;
-    color:white;
+    color:black;
 }
 
 li {
@@ -53,11 +63,11 @@ li:hover {
     justify-content:center;
     margin: 50px;
     padding-top: 200px;
+    padding-bottom: 1000px;
     font-size: 12px;
   }
   
   h1 {
-    /* color: #ffa411; */
     padding-top: 50px;
   }
   
@@ -78,7 +88,6 @@ li:hover {
   }
 
   #switcher li {
-    /* float: left; */
     height: 50px;
     width: 20px;
     margin: 0 15px 15px 0;
@@ -86,14 +95,13 @@ li:hover {
   
   #switcher ul {
     text-align: center;
-    line-height: 50px; /* vertically centers text */
+    line-height: 50px; 
     float: left;
     height: 50px;
     width: 80px;
     margin: 0 15px 15px 0;
   }
 
-  /* button colors */
   
   #Button1 {
     background-color:#a3f2cc;
@@ -111,22 +119,19 @@ li:hover {
     background: #b9f133;
   }
   
-  /* background colors */
   
-  .gray-theme {
+  .theme1 {
     background-color: #a3f2cc;
   }
   
-  .white-theme {
+  .theme2 {
     background-color:#f4d35b;
   }
   
-  .yellow-theme {
+  .theme3 {
     background-color: #ddb9fe;
   }
   
-  .blue-theme {
+  .theme4 {
     background-color: #b9f133;
-    /*   change text to white */
-    color: white;
   }

@@ -1,6 +1,5 @@
 console.log('this works')
 
-//---------- DATASET
 
 const viewpoints = [
   {
@@ -536,42 +535,32 @@ const viewpoints = [
     image: "../../assets/Project2/Sumeru/3.6/6.png"
   },
   
-
-
-
-
-
 ];
 
-//---------- RENDER viewpoints TO PAGE
 
 const ul = document.querySelector("ul");
 
 function renderviewpointsToPage(results) {
-  // iterate over data set
+
   for(let i = 0; i < results.length; i++){
-    // create the list item
     let listItem = document.createElement('li');
-    // add a class to each item of the results
     listItem.classList.add('card', results[i].nation) 
 
-    // add viewpoint name
+
     let title = document.createElement('h3')
     title.textContent = results[i].name 
-    // add viewpoint brand
+
     let store = document.createElement('p')
     store.textContent = results[i].brand 
-    // add viewpoint nation
+
     let nation = document.createElement('p')
     nation.classList.add(results[i].nation)
     nation.textContent = results[i].nation
 
-    // add viewpoint image
     let image = document.createElement('img')
     image.setAttribute('src', results[i].image)
 
     ul.appendChild(listItem)
-    //listItem.appendChild(nation)
     listItem.appendChild(image)
     listItem.appendChild(title)
     listItem.appendChild(store)
@@ -580,22 +569,19 @@ function renderviewpointsToPage(results) {
 }
 renderviewpointsToPage(viewpoints);
 
-//---------- FILTER viewpoints BY nation
-
 let filterBtns = document.querySelector(".filters");
 let cards = document.querySelectorAll(".card");
 
 function filterFn(event) {
   console.log(event.target)
   if(event.target.classList.contains('filter-btn')){
-    // select the current active button
+
     let activeBtn = filterBtns.querySelector('.active')
     activeBtn.classList.remove('active')
 
-    // apply the active class to the target
     event.target.classList.add('active')
 
-    const filterValue = event.target.getAttribute('data-filter') // yellow | red
+    const filterValue = event.target.getAttribute('data-filter') 
 
     for(let i = 0; i < cards.length; i++){
       if(cards[i].classList.contains(filterValue) || filterValue === 'All'){
@@ -618,56 +604,39 @@ filterBtns.addEventListener("click", filterFn);
 
 
 
-/* 
+let Button1 = document.getElementById("Button1");
+let Button2 = document.getElementById("Button2")
+let Button3 = document.getElementById("Button3");
+let Button4 = document.getElementById("Button4");
+let Button5 = document.getElementById("Button5");
 
-Instructions: when a user clicks on one of the colored dots, the    background color of the entire page changes to match that dot. You should not need to change any HTML or CSS. 
-
-Hint: Classes for each color have already been defined in the CSS tab.
-
-*/
-
-// 1 -- Select each button
-
-let Btn1 = document.getElementById("Button1");
-let whiteBtn = document.getElementById("Button2")
-let blueBtn = document.getElementById("Button3");
-let yellowBtn = document.getElementById("Button4");
-let Btn5 = document.getElementById("Button5");
-
-// 3 -- Write an event handler to change the color of the page when each circle is pressed.
-
-function swithcTo1() {
+function switch1() {
     let body = document.querySelector("body");
     body.style.backgroundColor = "#a3f2cc";
-    // body.style.color = "#a3f2cc";
   }
   
-  function switchToWhite() {
+  function switch2() {
       let body = document.querySelector("body");
       body.style.backgroundColor = "#f4d35b";
-      // body.style.color = "#f4d35b";
     }
   
-  function switchToBlue() {
+  function switch3() {
     let body = document.querySelector("body");
     body.style.backgroundColor = "#ddb9fe";
-    // body.style.color = "#ddb9fe";
   }
   
-  function switchToYellow() {
+  function switch4() {
     let body = document.querySelector("body");
     body.style.backgroundColor = "#b9f133";
-    // body.style.color = "#b9f133";
   }
 
-  function switchTo5() {
+  function switch5() {
     let body = document.querySelector("body");
     body.style.backgroundColor = "#ffffff";
-    // body.style.color = "#b9f133";
   }
-  // 2 -- Add an event listener to each circle
-  Btn1.addEventListener("click", swithcTo1);
-  whiteBtn.addEventListener("click", switchToWhite);
-  blueBtn.addEventListener("click", switchToBlue);
-  yellowBtn.addEventListener("click", switchToYellow);
-  Btn5.addEventListener("click", switchTo5);
+
+  Button1.addEventListener("click", switch1);
+  Button2.addEventListener("click", switch2);
+  Button3.addEventListener("click", switch3);
+  Button4.addEventListener("click", switch4);
+  Button5.addEventListener("click", switch5);
