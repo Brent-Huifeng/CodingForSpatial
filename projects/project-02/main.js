@@ -547,11 +547,11 @@ function renderviewpointsToPage(results) {
     listItem.classList.add('card', results[i].nation) 
 
 
-    let title = document.createElement('h3')
-    title.textContent = results[i].name 
+    let name = document.createElement('h3')
+    name.textContent = results[i].name 
 
-    let store = document.createElement('p')
-    store.textContent = results[i].brand 
+    let area = document.createElement('p')
+    area.textContent = results[i].area 
 
     let nation = document.createElement('p')
     nation.classList.add(results[i].nation)
@@ -562,15 +562,15 @@ function renderviewpointsToPage(results) {
 
     ul.appendChild(listItem)
     listItem.appendChild(image)
-    listItem.appendChild(title)
-    listItem.appendChild(store)
+    listItem.appendChild(name)
+    listItem.appendChild(area)
 
   }
 }
 renderviewpointsToPage(viewpoints);
 
 let filterBtns = document.querySelector(".filters");
-let cards = document.querySelectorAll(".card");
+let viewpoint = document.querySelectorAll(".card");
 
 function filterFn(event) {
   console.log(event.target)
@@ -583,13 +583,13 @@ function filterFn(event) {
 
     const filterValue = event.target.getAttribute('data-filter') 
 
-    for(let i = 0; i < cards.length; i++){
-      if(cards[i].classList.contains(filterValue) || filterValue === 'All'){
-        cards[i].classList.remove('hide')
-        cards[i].classList.add('show')
+    for(let i = 0; i < viewpoint.length; i++){
+      if(viewpoint[i].classList.contains(filterValue) || filterValue === 'All'){
+        viewpoint[i].classList.remove('hide')
+        viewpoint[i].classList.add('show')
       } else {
-        cards[i].classList.remove('show')
-        cards[i].classList.add('hide')
+        viewpoint[i].classList.remove('show')
+        viewpoint[i].classList.add('hide')
       }
 
     }
